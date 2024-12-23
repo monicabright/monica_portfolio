@@ -37,6 +37,8 @@ The dataset consisted of campaign-level data imported from Excel and included ap
 
 These measures provided critical metrics to assess platform performance and supported informed decision-making.
 
+![](Model_Image.png)
+
 ---
 
 ## **Executive Summary**  
@@ -48,7 +50,7 @@ The analysis revealed that **YouTube** was the most cost-effective platform, del
 2. **Google Ads**: High cost per conversion ($35) and the lowest conversion rate (4.62%).  
 3. **Twitter**: Moderate performance, with potential for optimization in ad targeting and content strategy.  
 
-[Insert Visualization of Trends or Snapshot of Dashboard]  
+![](ROAS_.png) 
 
 ---
 
@@ -72,7 +74,7 @@ The analysis revealed that **YouTube** was the most cost-effective platform, del
 ### **Budget Reallocation**:  
 - Recommended reallocating budget from Google Ads to YouTube for higher ROI.  
 
-[Insert specific visualizations for each category here]  
+![](Campaigns_duration_.png)
 
 ---
 
