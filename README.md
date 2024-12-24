@@ -1,95 +1,93 @@
-# **Digital Marketing Analytics: Fresh Cart Ad Spend Analysis**  
+# Marketing Campaign Analysis for FreshCart (January 2023 – August 2023)
 
-## **Project Background**  
-Fresh Cart is a leading online grocery store operating in the competitive e-commerce sector. The company relies heavily on digital advertising to drive customer acquisition and sales. With increasing ad spend across multiple platforms, Fresh Cart sought to optimize its ad strategy to ensure maximum ROI and efficiency.  
+## Project Background
+FreshCart is an online grocery store operating in the e-commerce industry for several years. The company’s business model relies heavily on online advertising across multiple platforms to drive customer acquisition and retention. Key business metrics such as conversion rates, return on ad spend (ROAS), and cost per conversion guide its advertising strategies. This project provides insights and recommendations for optimizing FreshCart’s ad spend based on historical campaign data.
 
-As a **Data Analyst** at Fresh Cart, I analyzed campaign data from Excel using Power BI to uncover actionable insights that support smarter budget allocation and more effective ad campaigns.  
+Insights and recommendations are provided on the following key areas:
+- Platform Effectiveness
+- Cost Efficiency
+- Return on Ad Spend (ROAS)
+- Campaign Optimization
 
----
-
-## **Insights and Recommendations**  
-This analysis provided insights and actionable recommendations across four key areas:  
-- **Platform Effectiveness**: Evaluating the ROI and efficiency of different advertising platforms.  
-- **Campaign Optimization**: Identifying high-performing campaigns and opportunities for improvement.  
-- **Audience Engagement**: Understanding audience behavior and preferences.  
-- **Budget Reallocation**: Suggesting fund redistribution to maximize returns.  
+An interactive Power BI dashboard used to report and explore sales trends can be found [here]( https://app.powerbi.com/view?r=eyJrIjoiY2Q1YWJiMTItNjgwZS00NmU0LWI5NmMtNmY1NDY2MmUyNmZjIiwidCI6IjI5OTkwODdiLTFkYTUtNDIzNC04Mjg4LTk4YjFjNGMxZGNhZSJ9)
 
 ---
 
-## **Data Structure & Initial Checks**  
-The dataset consisted of campaign-level data imported from Excel and included approximately **50 rows**.  
-
-### **Key Data Points**:  
-- **CampaignID**: Unique identifier for each campaign.  
-- **Platform**: Advertising platform (e.g., YouTube, Twitter).  
-- **AdDuration**: Duration of the ad campaign.  
-- **Cost**: Amount spent on the campaign.  
-- **Impressions, Clicks, Conversions**: Key engagement metrics.  
-- **ConversionValue**: Revenue generated from conversions.  
-
-### **Data Modeling in Power BI**:  
-- A **Date Table** was created using **DAX** to enable time-based analysis.  
-- Custom **DAX Measures** calculated KPIs, including:  
-  - **Conversion Rate** = `DIVIDE([Conversions], [Clicks], 0)`  
-  - **ROAS** = `DIVIDE([ConversionValue], [Cost], 0)`  
-  - **Cost per Conversion** = `DIVIDE([Cost], [Conversions], 0)`  
-  - **Impression-to-Click Rate** = `DIVIDE([Clicks], [Impressions], 0)`  
-
-These measures provided critical metrics to assess platform performance and supported informed decision-making.
-
+## Data Description
+The marketing team provided an Excel file containing FreshCart ad campaign data. The primary database structure consists of one main table (Ad Campaign Data) with approximately 50 records. 
+Data integrity was validated by checking for null values and duplicates, ensuring the data was clean and accurate. Additionally, data types for fields such as dates, numeric values, and text were standardized to maintain consistency across the dataset. To enhance data analysis, calculated columns and measures were created using DAX in Power BI, enabling more insightful reporting and decision-making.
+A data model was created in Power BI, integrating the Ad Campaign Data with the Date Table to facilitate time-based analytics.
 ![](https://github.com/monicabright/monica_portfolio/blob/main/Fresh%20cart/Model_Image.png)
 
 ---
 
-## **Executive Summary**  
-### **Overview of Findings**  
-The analysis revealed that **YouTube** was the most cost-effective platform, delivering the highest ROI and conversion efficiency. Conversely, **Google Ads** demonstrated inefficiencies that required reassessment.  
+## Executive Summary
+### Overview of Findings
+FreshCart’s advertising campaigns have shown varying levels of performance across platforms. The key findings include:
+1. **YouTube** emerged as the most effective platform due to its high conversion rates, low cost per conversion, and impressive ROAS.
+2. **Google Ads** was identified as the least cost-efficient platform, with the highest cost per conversion and lowest ROAS.
+3. Opportunities exist to optimize ad spend on Twitter and improve overall campaign targeting.
 
-#### **Top Insights**:  
-1. **YouTube**: Outstanding ROAS of 1298.84% and the lowest cost per conversion ($2.72).  
-2. **Google Ads**: High cost per conversion ($35) and the lowest conversion rate (4.62%).  
-3. **Twitter**: Moderate performance, with potential for optimization in ad targeting and content strategy.  
-
-![](https://github.com/monicabright/monica_portfolio/blob/main/Fresh%20cart/roas_performance_by_platform.png) 
-
----
-
-## **Insights Deep Dive**  
-
-### **Platform Effectiveness**:  
-- **YouTube**:  
-  - Conversion rate: 6.41%, well above the industry average (1-3%).  
-  - Generates significant sales revenue with fewer campaigns.  
-
-- **Google Ads**:  
-  - High CPC and the lowest ROAS (180.88%).  
-
-### **Campaign Optimization**:  
-- Benchmarked successful YouTube campaigns to guide content strategy.  
-- Identified underperforming campaigns on Google Ads and Twitter for refinement.  
-
-### **Audience Engagement**:  
-- High engagement levels on YouTube and Twitter indicate opportunities for targeted retargeting campaigns.  
-
-### **Budget Reallocation**:  
-- Recommended reallocating budget from Google Ads to YouTube for higher ROI.
-
-![](https://github.com/monicabright/monica_portfolio/blob/main/Fresh%20cart/Campaigns_duration%20-%20Copy.png)
+### Key Visualization
+The Power BI dashboard provides an overview of platform performance, including total spend, revenue, conversion rates, and ROAS.
+![](https://github.com/monicabright/monica_portfolio/blob/main/Fresh%20cart/whole%20dashboard.png)
 
 ---
 
-## **Recommendations**  
-Based on the findings, I recommend:  
-1. **Increase Investment in YouTube**: Leverage its high ROAS by running more campaigns or extending durations.  
-2. **Optimize Twitter Ads**: Improve targeting and creative content to enhance ROAS.  
-3. **Reassess Google Ads Strategy**: Revisit ad creatives, keyword targeting, and landing pages for better performance.  
-4. **Implement Retargeting Campaigns**: Across all platforms, re-engage visitors to improve conversion rates.  
+## Insights Deep Dive
+
+### Platform Effectiveness
+-  **YouTube’s** conversion rate is 6.41%, exceeding industry averages (1-3%).
+-  **Twitter’s** conversion rate is 6.79%, making it competitive but less cost-effective than YouTube.
+-  **Google Ads** has the lowest conversion rate (4.62%), indicating underperformance.
+-  ** Facebook and Instagram** show moderate performance, with room for optimization.
+
+### Cost Efficiency
+-  **YouTube’s** cost per conversion is $2.72, the lowest among platforms.
+-  **Google Ads** cost per conversion is $35, the highest.
+-  **Twitter’s** cost per conversion ($14.21) suggests potential for cost optimization.
+-  ** Facebook and Instagram** have moderate costs per conversion.
+
+### Return on Ad Spend (ROAS)
+- **YouTube’s** ROAS is 1298.84%, the highest among platforms.
+- **Twitter’s** ROAS is 420.18%, indicating good returns but room for improvement.
+- **Google Ads** ROAS is 180.88%, the lowest.
+- ** Facebook and Instagram** ROAS are moderate, requiring further analysis.
+
+### Campaign Optimization
+- **YouTube’s** fewer campaigns (9 vs. 12 on Twitter) and shorter durations deliver superior results.
+- **Twitter’s** higher number of campaigns does not translate into proportional revenue.
+- **Google Ads** high spend yields relatively low revenue, requiring a reassessment of strategy.
+-  ** Facebook and Instagram** campaigns perform consistently but lack standout metrics.
 
 ---
 
-## **Technical Implementation**  
-This project was executed entirely in **Power BI**, with the following steps:  
-1. **Data Import**: The dataset was imported directly from Excel.  
-2. **Data Transformation**: Cleaned and prepared the data using Power Query.  
-3. **DAX Measures**: Created to calculate key metrics like ROAS, Conversion Rate, and Cost per Conversion.  
-4. **Visualizations**: Designed interactive dashboards to present findings and enable stakeholder exploration. 
+## Recommendations
+Based on the insights, the following recommendations are proposed:
+
+### YouTube
+1. Increase Ad spend due to high ROAS and low cost per conversion.
+2. Extend successful campaigns and replicate top-performing strategies.
+
+### Twitter
+1. Optimize targeting and creative content to reduce costs.
+2. Refine campaign strategy based on performance analytics.
+
+### Google Ads
+1. Reassess keywords, ad creatives, and landing pages to improve performance.
+2. Focus on reducing cost per conversion and increasing ROAS.
+
+### Overall Recommendations
+1. Implement retargeting campaigns across platforms to enhance conversions.
+2. Allocate budget strategically, prioritizing high-performing platforms.
+
+---
+
+## Assumptions and Caveats
+1. Missing data for certain campaigns was excluded from the analysis.
+2. Conversion values were assumed accurate based on provided data.
+3. Platform performance may vary by season; this analysis reflects historical trends.
+
+---
+
+This comprehensive analysis equips FreshCart with actionable insights to optimize its advertising strategy, reduce costs, and maximize returns on ad spend.
