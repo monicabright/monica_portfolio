@@ -87,7 +87,3 @@ Based on the insights, the following recommendations are proposed:
 1. Missing data for certain campaigns was excluded from the analysis.
 2. Conversion values were assumed accurate based on provided data.
 3. Platform performance may vary by season; this analysis reflects historical trends.
-
----
-
-This comprehensive analysis equips FreshCart with actionable insights to optimize its advertising strategy, reduce costs, and maximize returns on ad spend.
